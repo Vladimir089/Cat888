@@ -156,6 +156,8 @@ class DocumentViewController: UIViewController {
     
     
     
+    
+    
 }
 
 extension DocumentViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -250,6 +252,14 @@ extension DocumentViewController: UICollectionViewDelegate, UICollectionViewData
         return CGSize(width: collectionView.frame.width - 30, height: 166)
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = DetailDocumentViewController()
+        vc.delegate = self
+        vc.index = indexPath.row
+        vc.doc = arrDoc[indexPath.row]
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
 }
 
@@ -258,5 +268,6 @@ extension DocumentViewController: DocumentViewControllerDelegate {
     func reloadCollection() {
         checkArr()
         collection?.reloadData()
+        print(arrDoc)
     }
 }

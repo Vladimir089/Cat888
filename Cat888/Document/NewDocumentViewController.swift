@@ -10,6 +10,7 @@ import UIKit
 class NewDocumentViewController: UIViewController, UIImagePickerControllerDelegate , UINavigationControllerDelegate {
     
     weak var delegate: DocumentViewControllerDelegate?
+    weak var twoDeleagte: DetailDocumentViewControllerDelegate?
     
     var isNew = true
     var index = 0
@@ -196,7 +197,6 @@ class NewDocumentViewController: UIViewController, UIImagePickerControllerDelega
         textField.leftViewMode = .always
         textField.rightViewMode = .always
         textField.delegate = self
-        textField.keyboardType = .numberPad
         return textField
     }
     
@@ -229,7 +229,9 @@ class NewDocumentViewController: UIViewController, UIImagePickerControllerDelega
             let data = try JSONEncoder().encode(arrDoc) //тут мкассив конвертируем в дату
             try saveAthleteArrToFile(data: data)
             delegate?.reloadCollection()
+            twoDeleagte?.reloadProfile(newDoc: doc)
             delegate = nil
+            twoDeleagte = nil
             self.dismiss(animated: true)
         } catch {
             print("Failed to encode or save athleteArr: \(error)")

@@ -144,7 +144,6 @@ class NewAndEditViewController: UIViewController, UIImagePickerControllerDelegat
         textField.leftViewMode = .always
         textField.rightViewMode = .always
         textField.delegate = self
-        textField.keyboardType = .numberPad
         return textField
     }
     

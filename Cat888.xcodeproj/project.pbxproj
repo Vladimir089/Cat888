@@ -25,6 +25,8 @@
 		158853992C87340A00B6E5E9 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158853982C87340A00B6E5E9 /* DocumentViewController.swift */; };
 		1588539B2C873F9700B6E5E9 /* ModelDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1588539A2C873F9700B6E5E9 /* ModelDoc.swift */; };
 		1588539D2C87475600B6E5E9 /* NewDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1588539C2C87475600B6E5E9 /* NewDocumentViewController.swift */; };
+		158853E92C88699200B6E5E9 /* DetailDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158853E82C88699200B6E5E9 /* DetailDocumentViewController.swift */; };
+		158853EB2C88838800B6E5E9 /* PhotoEditCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158853EA2C88838700B6E5E9 /* PhotoEditCreateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		158853982C87340A00B6E5E9 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
 		1588539A2C873F9700B6E5E9 /* ModelDoc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDoc.swift; sourceTree = "<group>"; };
 		1588539C2C87475600B6E5E9 /* NewDocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDocumentViewController.swift; sourceTree = "<group>"; };
+		158853E82C88699200B6E5E9 /* DetailDocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDocumentViewController.swift; sourceTree = "<group>"; };
+		158853EA2C88838700B6E5E9 /* PhotoEditCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditCreateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,8 @@
 				158853982C87340A00B6E5E9 /* DocumentViewController.swift */,
 				1588539A2C873F9700B6E5E9 /* ModelDoc.swift */,
 				1588539C2C87475600B6E5E9 /* NewDocumentViewController.swift */,
+				158853E82C88699200B6E5E9 /* DetailDocumentViewController.swift */,
+				158853EA2C88838700B6E5E9 /* PhotoEditCreateViewController.swift */,
 			);
 			path = Document;
 			sourceTree = "<group>";
@@ -227,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				158853E92C88699200B6E5E9 /* DetailDocumentViewController.swift in Sources */,
 				1588538E2C85F35200B6E5E9 /* EditStatViewController.swift in Sources */,
 				158853942C86F51100B6E5E9 /* DetailPetViewController.swift in Sources */,
 				158853802C85DEA300B6E5E9 /* LoadViewController.swift in Sources */,
@@ -235,6 +242,7 @@
 				158853892C85E7BF00B6E5E9 /* TabBarViewController.swift in Sources */,
 				158853862C85E1C300B6E5E9 /* OnbUserViewController.swift in Sources */,
 				158853962C8713B100B6E5E9 /* AddEditNewTaskViewController.swift in Sources */,
+				158853EB2C88838800B6E5E9 /* PhotoEditCreateViewController.swift in Sources */,
 				1588538C2C85E80E00B6E5E9 /* HomeViewController.swift in Sources */,
 				158853992C87340A00B6E5E9 /* DocumentViewController.swift in Sources */,
 				158853902C860BDC00B6E5E9 /* Model.swift in Sources */,
