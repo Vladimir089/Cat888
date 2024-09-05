@@ -63,12 +63,14 @@ class TabBarViewController: UITabBarController {
             centerConstraint?.isActive = true
         }
     }
+    
+    
 
     private func generateControllers() {
         let home = generateViewControllers(image: UIImage.home, vc: HomeViewController())
         let profile = generateViewControllers(image: UIImage.doc, vc: DocumentViewController())
-        let setting = generateViewControllers(image: UIImage.stud, vc: UIViewController())
-        let bookmark = generateViewControllers(image: UIImage.set, vc: UIViewController())
+        let setting = generateViewControllers(image: UIImage.stud, vc: StatMenuViewController())
+        let bookmark = generateViewControllers(image: UIImage.set, vc: SettingsViewController())
         viewControllers = [home, profile, setting, bookmark]
     }
 

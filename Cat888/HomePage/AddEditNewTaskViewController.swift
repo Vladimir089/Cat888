@@ -122,6 +122,13 @@ class AddEditNewTaskViewController: UIViewController {
         })
         deleteButton.addTarget(self, action: #selector(del), for: .touchUpInside)
         
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(hideKB))
+        view.addGestureRecognizer(gesture)
+    }
+    
+    @objc func hideKB() {
+        checkBut()
+        view.endEditing(true)
     }
     
     @objc func save() {

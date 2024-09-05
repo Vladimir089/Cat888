@@ -201,6 +201,11 @@ class DetailDocumentViewController: UIViewController {
         self.present(vc, animated: true)
     }
 
+    @objc func openFullPhoto(sender: UITapGestureRecognizer) {
+        let vc = FullPhotoViewController()
+        vc.doc = doc?.images[sender.view!.tag]
+        self.present(vc, animated: true)
+    }
 }
 
 
@@ -233,7 +238,9 @@ extension DetailDocumentViewController: UICollectionViewDelegate, UICollectionVi
         
         let imageView = UIImageView(image: UIImage(data: doc?.images[indexPath.row].image ?? Data()))
         imageView.clipsToBounds = true
+        imageView.tag = indexPath.row
         imageView.layer.cornerRadius = 10
+        imageView.isUserInteractionEnabled = true
         cell.addSubview(imageView)
         imageView.snp.makeConstraints { make in
             make.left.right.equalToSuperview().inset(15)
@@ -241,6 +248,8 @@ extension DetailDocumentViewController: UICollectionViewDelegate, UICollectionVi
             make.left.right.equalToSuperview().inset(15)
             make.bottom.equalToSuperview().inset(15)
         }
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(openFullPhoto(sender:)))
+        imageView.addGestureRecognizer(gesture)
         
         let editButton = UIButton(type: .system)
         editButton.setBackgroundImage(.editBut, for: .normal)

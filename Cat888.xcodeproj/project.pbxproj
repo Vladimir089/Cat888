@@ -27,6 +27,11 @@
 		1588539D2C87475600B6E5E9 /* NewDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1588539C2C87475600B6E5E9 /* NewDocumentViewController.swift */; };
 		158853E92C88699200B6E5E9 /* DetailDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158853E82C88699200B6E5E9 /* DetailDocumentViewController.swift */; };
 		158853EB2C88838800B6E5E9 /* PhotoEditCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158853EA2C88838700B6E5E9 /* PhotoEditCreateViewController.swift */; };
+		158853ED2C8898D800B6E5E9 /* FullPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158853EC2C8898D800B6E5E9 /* FullPhotoViewController.swift */; };
+		158853F02C89BFA400B6E5E9 /* StatMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158853EF2C89BFA400B6E5E9 /* StatMenuViewController.swift */; };
+		158853F22C89CC9B00B6E5E9 /* StatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158853F12C89CC9B00B6E5E9 /* StatModel.swift */; };
+		158853F42C89E26900B6E5E9 /* DetailCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158853F32C89E26900B6E5E9 /* DetailCatViewController.swift */; };
+		158853F72C89F26500B6E5E9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158853F62C89F26500B6E5E9 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +56,11 @@
 		1588539C2C87475600B6E5E9 /* NewDocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDocumentViewController.swift; sourceTree = "<group>"; };
 		158853E82C88699200B6E5E9 /* DetailDocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDocumentViewController.swift; sourceTree = "<group>"; };
 		158853EA2C88838700B6E5E9 /* PhotoEditCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditCreateViewController.swift; sourceTree = "<group>"; };
+		158853EC2C8898D800B6E5E9 /* FullPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPhotoViewController.swift; sourceTree = "<group>"; };
+		158853EF2C89BFA400B6E5E9 /* StatMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatMenuViewController.swift; sourceTree = "<group>"; };
+		158853F12C89CC9B00B6E5E9 /* StatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatModel.swift; sourceTree = "<group>"; };
+		158853F32C89E26900B6E5E9 /* DetailCatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCatViewController.swift; sourceTree = "<group>"; };
+		158853F62C89F26500B6E5E9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +94,8 @@
 		158853682C85DE1400B6E5E9 /* Cat888 */ = {
 			isa = PBXGroup;
 			children = (
+				158853F52C89F25600B6E5E9 /* Settings */,
+				158853EE2C89BF9100B6E5E9 /* Stats */,
 				158853972C8733F500B6E5E9 /* Document */,
 				1588538A2C85E7FA00B6E5E9 /* HomePage */,
 				158853872C85E7A700B6E5E9 /* TabBar */,
@@ -152,8 +164,27 @@
 				1588539C2C87475600B6E5E9 /* NewDocumentViewController.swift */,
 				158853E82C88699200B6E5E9 /* DetailDocumentViewController.swift */,
 				158853EA2C88838700B6E5E9 /* PhotoEditCreateViewController.swift */,
+				158853EC2C8898D800B6E5E9 /* FullPhotoViewController.swift */,
 			);
 			path = Document;
+			sourceTree = "<group>";
+		};
+		158853EE2C89BF9100B6E5E9 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				158853EF2C89BFA400B6E5E9 /* StatMenuViewController.swift */,
+				158853F12C89CC9B00B6E5E9 /* StatModel.swift */,
+				158853F32C89E26900B6E5E9 /* DetailCatViewController.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		158853F52C89F25600B6E5E9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				158853F62C89F26500B6E5E9 /* SettingsViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				158853ED2C8898D800B6E5E9 /* FullPhotoViewController.swift in Sources */,
+				158853F02C89BFA400B6E5E9 /* StatMenuViewController.swift in Sources */,
+				158853F72C89F26500B6E5E9 /* SettingsViewController.swift in Sources */,
+				158853F42C89E26900B6E5E9 /* DetailCatViewController.swift in Sources */,
 				158853E92C88699200B6E5E9 /* DetailDocumentViewController.swift in Sources */,
 				1588538E2C85F35200B6E5E9 /* EditStatViewController.swift in Sources */,
 				158853942C86F51100B6E5E9 /* DetailPetViewController.swift in Sources */,
@@ -241,6 +276,7 @@
 				1588536C2C85DE1400B6E5E9 /* SceneDelegate.swift in Sources */,
 				158853892C85E7BF00B6E5E9 /* TabBarViewController.swift in Sources */,
 				158853862C85E1C300B6E5E9 /* OnbUserViewController.swift in Sources */,
+				158853F22C89CC9B00B6E5E9 /* StatModel.swift in Sources */,
 				158853962C8713B100B6E5E9 /* AddEditNewTaskViewController.swift in Sources */,
 				158853EB2C88838800B6E5E9 /* PhotoEditCreateViewController.swift in Sources */,
 				1588538C2C85E80E00B6E5E9 /* HomeViewController.swift in Sources */,
